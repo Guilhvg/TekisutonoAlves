@@ -31,3 +31,23 @@ body {
 .topnav .icon {
   display: none;
 }
+
+.topnav-accordion a {
+  float: center;
+  color: #777777;
+  display: block;
+  text-align: center; padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav-accordion a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav-accordion a.active {
+  background-color: #899999;
+  color: white;
+}
+

@@ -1,0 +1,107 @@
+.accordion * {
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+        
+.accordion body {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        width: 100%;
+    }
+        
+.accordion h1 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 2rem; /* Título maior em telas grandes */
+    }
+        
+.accordion {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+.accordion-item {
+        border-bottom: 1px solid #ddd;
+     }
+        
+.accordion-item:last-child {
+        border-bottom: none;
+     }
+        
+.accordion-header {
+        background-color: #f7f7f7;
+        padding: 15px;
+        cursor: pointer;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background-color 0.3s;
+    }
+    
+.accordion-header:hover {
+        background-color: #e9e9e9;
+    }
+    
+.accordion-header::after {
+        content: '+';
+        font-size: 20px;
+    }
+    
+.accordion-header.active::after {
+        content: '-';
+    }
+        
+.accordion-content {
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+    
+.accordion-content-inner {
+        padding: 15px;
+    }
+        
+/* Estilos para dispositivos móveis (telas menores que 768px) */
+@media (max-width: 768px) {
+        .accordion body {
+            padding: 10px;
+        }
+
+        .accordion h1 {
+            font-size: 1.5rem; /* Título menor em celulares */
+        }
+
+        .accordion-header {
+            padding: 12px;
+            font-size: 0.9rem; /* Texto um pouco menor */
+        }
+            
+        .accordion-content-inner {
+            padding: 12px;
+            font-size: 0.9rem; /* Conteúdo mais compacto */
+        }
+        
+        .accordion-header::after {
+            font-size: 18px; /* Ícone um pouco menor */
+            }
+        }
+
+/* Estilos para telas muito pequenas (menos de 480px) */
+        @media (max-width: 480px) {
+        .accordion-header {
+             padding: 10px;
+        }
+ 
+        .accordion-content-inner {
+             padding: 10px;
+            }
+        }
