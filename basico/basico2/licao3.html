@@ -3,25 +3,69 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/mediaquery.css">
-<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="../../css/navbar.css">
+<link rel="stylesheet" href="../../css/accordion.css">
+<link rel="stylesheet" href="../../css/dropdown.css">
 </head>
 <body>
 
-
 <div class="topnav" id="myTopnav">
-  <a href="index.html" class="active">Página Inicial</a>
-  <a href="#Lic1">Lição 1</a>
-  <a href="#Lic2">Lição 2</a>
-  <a href="licao3.html">Lição 3</a>
-  <a href="#Lic4">Lição 4</a>
-    <a href="#Lic5">Lição 5</a>
-  <a href="#about">Sobre</a>
+  <a href="../../index.html" class="active">Página Inicial</a>
+  <a href="#Lic5">Sobre</a>
+  <div class="dropdown">
+  	 <button class="dropbtn">Apostilas
+   		 <i class="fa fa-caret-down"></i>
+ 	 </button>
+    	 <div class="dropdown-content">
+      	 	<div class="row">
+        	 <div class="column">
+         		 <h3>Básico 1</h3>
+          		 <a href="#">Lição 1</a>
+          		 <a href="#">Lição 2</a>
+          		 <a href="#">Lição 3</a>
+          		 <a href="#">Lição 4</a>
+          		 <a href="#">Lição 5</a>
+        	 </div>
+        	 <div class="column">
+          		 <h3>Básico 2</h3>
+          		 <a href="#">Lição 1</a>
+          		 <a href="#">Lição 2</a>
+  			 <a href="../../licao3.html">Lição 3</a>
+          		 <a href="#">Lição 4</a>
+          		 <a href="#">Lição 5</a>
+        	 </div>
+        	 <div class="column">
+          		 <h3>Básico 3</h3>
+          		 <a href="#">Lição 1</a>
+          		 <a href="#">Lição 2</a>
+          		 <a href="#">Lição 3</a>
+          		 <a href="#">Lição 4</a>
+          		 <a href="#">Lição 5</a>
+        	 </div>
+        	 <div class="column">
+          		 <h3>Básico 4</h3>
+          		 <a href="#">Lição 1</a>
+          		 <a href="#">Lição 2</a>
+          		 <a href="#">Lição 3</a>
+          		 <a href="#">Lição 4</a>
+          		 <a href="#">Lição 5</a>
+        	 </div>
+        	 <div class="column">
+          		 <h3>Básico 5</h3>
+          		 <a href="#">Lição 1</a>
+          		 <a href="#">Lição 2</a>
+          		 <a href="#">Lição 3</a>
+          		 <a href="#">Lição 4</a>
+          		 <a href="#">Lição 5</a>
+        	 </div>
+      	 	</div>
+    	 </div>
+  </div> 
+  </a>
   <a href="javascript:void(0);" class="icon" onclick="topnavbar()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
-
 
 <div style="padding-left:16px">
   <h2>ＶＩＩＩ - 読みましょう - ６１・６２ページ</h2>
@@ -74,7 +118,9 @@ B-　________________ホテルです。とても　いい　ところです。<b
 </p>
 </div>
 
-<script type="text/javascript" src="js/topnavbar.js" defer></script>
+<script type="text/javascript" src="../../js/accordionPage.js" defer></script>
+<script type="text/javascript" src="../../js/dropdownToggle.js" defer></script>
+<script type="text/javascript" src="../../js/topnavbar.js" defer></script>
 <script type="text/javascript">topnavbar();</script>
 </body>
 </html>
