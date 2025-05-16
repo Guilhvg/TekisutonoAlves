@@ -1,5 +1,3 @@
-
-<script>
 function topnavbar() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -8,5 +6,4 @@ function topnavbar() {
     x.className = "topnav";
   }
 }
-</script>
 
