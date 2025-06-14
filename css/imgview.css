@@ -1,0 +1,13 @@
+.hover-word {
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#image-preview {
+  border: 1px solid #ccc;
+  background: white;
+  padding: 5px;
+  z-index: 1000;
+  pointer-events: none; /* Prevents the preview from interfering with hovering */
+}
